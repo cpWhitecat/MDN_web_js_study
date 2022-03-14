@@ -99,8 +99,8 @@ zconsole.log(cpp);
               
               function out(){
                 var name = 20;
-                var x = function in() {
-                    var  = name
+                var x = function in(){
+                    name
                 }
               }
               // lambda 匿名函数 希腊字母像中文的入
@@ -112,6 +112,7 @@ zconsole.log(cpp);
               // 在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，
               // 而其余参数将作为新函数的参数，供调用时使用。
               
+              // 这个文章 讲述了一些关于箭头函数和this指向问题的解答 https://juejin.cn/post/6881312898564980750
               
               
               
