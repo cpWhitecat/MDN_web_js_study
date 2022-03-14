@@ -1,7 +1,10 @@
 /* 
 对象原型
+会有一些属性被其他对象继承
+相当于公共属性
+比如收Array的lenght等之类的属性或者方法
 
-之前一个脚本
+之前一个脚本  autoClickYOUDAO
 想实现网易有道翻译自动点击
 但是逆向出来里面有个函数 判断isTrusted
 在qiita找到了重写isTrusted的代码
