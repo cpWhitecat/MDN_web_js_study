@@ -85,3 +85,10 @@ zconsole.log(cpp);
                 pet.getSex();                   // male
                 pet.getName();                  // Oliver
                 
+              
+                // 这是需要提交的例子
+              (
+                (function(){
+                  console.log
+                })
+              )()
