@@ -17,4 +17,6 @@ var cppName = name[2];
 
 var [cpName,cName,cppName] = name;
 // 这是使用了解构方法的赋值操作
-// 现在还不知道能不能和 ...args 协作
+// 现在还不知道能不能使用 ...args(剩余函数) 
+
+
