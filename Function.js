@@ -99,7 +99,7 @@ zconsole.log(cpp);
               
               function out(){
                 var name = 20;
-                var x = function in(){
+                var x = function in(any){
                     name
                 }
               }
