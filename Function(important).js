@@ -144,3 +144,16 @@ function Person() {
     self.age++;
   }, 1000);
 }
+
+
+
+
+
+
+this指向问题
+在严格模式下是未定义的 指向undefined
+
+this 环境转换 可用 call 和 apply
+call(this,...args){
+  
+}
