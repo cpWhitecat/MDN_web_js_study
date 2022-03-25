@@ -1,4 +1,4 @@
-zconsole.log(cpp);
+console.log(cpp);
 console.log(cp);
 const cpp = function(){
     return cpp + cpp
@@ -98,10 +98,7 @@ function foo(i) {
 
 
 function out(){
-  var name = 20;
-  var x = function in(){
-      name
-  }
+  
 }
 // lambda 匿名函数 希腊字母像中文的入
 
@@ -131,18 +128,20 @@ function Person() {
 }
 
 var p = new Person();
-Copy to Clipboard
-在ECMAScript 3/5里，通过把this的值赋值给一个变量可以修复这个问题。
+// Copy to Clipboard
+// 在ECMAScript 3/5里，通过把this的值赋值给一个变量可以修复这个问题。
 
 function Person() {
   var self = this; // 有的人习惯用`that`而不是`self`，
                    // 无论你选择哪一种方式，请保持前后代码的一致性
   self.age = 0;
-
-  setInterval(function growUp() {
+  setInterval(function growUp() {//setinterval它的this指向window
+    // 所以需要把person的this指向的对象给赋值出来
     // 以下语句可以实现预期的功能
     self.age++;
-  }, 1000);
+    console.log(this); //是window对象
+    console.log(self);// 是person
+  }, 6000);
 }
 
 
@@ -153,7 +152,15 @@ function Person() {
 this指向问题
 在严格模式下是未定义的 指向undefined
 
+
+// 包装对象 好像是 const arr1 = new Array(arr[])
+// arr1 就是一个包装对象 
+
 this 环境转换 可用 call 和 apply
-call(this,...args){
+
+
+
+function call(params) {
   
 }
+call(this,...args)
