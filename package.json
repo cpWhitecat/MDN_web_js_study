@@ -1,0 +1,22 @@
+{
+  "name": "mdn_web_js_study",
+  "version": "1.0.0",
+  "description": "mdn",
+  "main": "Array.js",
+  "scripts": {
+    "test": "web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpWhitecat/MDN_web_js_study.git"
+  },
+  "keywords": [
+    "cpp"
+  ],
+  "author": "cpWhitecat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpWhitecat/MDN_web_js_study/issues"
+  },
+  "homepage": "https://github.com/cpWhitecat/MDN_web_js_study#readme"
+}
