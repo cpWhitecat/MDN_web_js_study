@@ -113,7 +113,9 @@ function out(){
 https://juejin.cn/post/6881312898564980750
 
 
-在箭头函数出现之前，每一个新函数都重新定义了自己的 this 值（在构造函数中是一个新的对象；在严格模式下是未定义的；在作为“对象方法”调用的函数中指向这个对象；等等）。以面向对象的编程风格，这样着实有点恼人。
+在箭头函数出现之前，每一个新函数都重新定义了自己的 this 值
+(在构造函数中是一个新的对象；在严格模式下是未定义的；在作为“对象方法”调用的函数中指向这个对象；等等)。
+以面向对象的编程风格，这样着实有点恼人。
 
 function Person() {
   // 构造函数Person()将`this`定义为自身
@@ -168,5 +170,5 @@ call(this,...args)
 
 
 
-function中的get和set 以及getter 有待验证
+function中的get和set 以及getter and setter有待验证
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get
