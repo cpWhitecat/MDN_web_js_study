@@ -164,3 +164,8 @@ function call(params) {
   
 }
 call(this,...args)
+
+
+
+
+function中的get和set 以及getter 有待验证
