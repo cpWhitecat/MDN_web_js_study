@@ -169,3 +169,4 @@ call(this,...args)
 
 
 function中的get和set 以及getter 有待验证
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get

@@ -2,7 +2,7 @@
   "name": "mdn_web_js_study",
   "version": "1.0.0",
   "description": "mdn",
-  "main": "Array.js",
+  "main": "index.html",
   "scripts": {
     "test": "web"
   },
