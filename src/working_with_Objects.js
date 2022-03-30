@@ -28,5 +28,32 @@
 /* 如果一个对象是通过在顶级脚本的对象初始化器创建的，
 用var声明过的 会被编译器自动置顶 这就是顶级对象
 则 JavaScript 在每次遇到包含该对象字面量的表达式时都会创建对象。
+
 同样的，在函数中的初始化器在每次函数调用时也会被创建。
  */
+
+
+
+指向:31 函数的初始化器就是用new关键字和o
+function cpp(value) {
+    console.log(this);
+}
+var a = new cpp();   //为什么这里明明只是new一下 为什么会调用cpp()这个函数
+console.log("-------------------");
+a;
+
+function peoDemo(){
+    this.name = 'cp'
+    console.log('-------');
+}
+
+function newPeo(){
+    let p  = new peoDemo
+    console.log(this);
+}
+newPeo()
+
+关于new关键字还是有不懂的地方
+
+解释第:41
+// 每次new一下 相当于执行了一遍new的函数
