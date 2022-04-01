@@ -43,23 +43,48 @@ console.log("-------------------");
 a;
 
 function peoDemo(){
-    this.name = 'cp'
+    this.name = 'cp'  
     console.log('-------------------');
     console.log();
     console.log('-------------------');
+    // return console.log("peodemo");
 }
 
 function newPeo(){
-    let p  = new peoDemo  //mdn的new步骤说如果被new的函数没有返回值 
+    let p  = new peoDemo  //mdn的new步骤说如果被new的函数没有主动设置返回值 
                           //会自动返回一个this 可是没有返回任何值
     console.log(this);
     console.log('---------------------');
     console.log(p);
 }
 newPeo()
+console.log(window.name)
 
 
 关于new关键字还是有不懂的地方
 
 解释第:41
 // 每次new一下 相当于执行了一遍new的函数
+
+
+
+
+
+删除属性
+
+可以用delete来删除非继承属性
+function deleteAttribute(attribute){
+    attr = attribute;
+    console.log(this);
+    delete this.attr;
+    return this
+//为什么函数传的参数不能在函数内部被当作一个属性使用
+//如果有这个需求怎么办
+//虽然这个需求感觉不大可能会有 我也只是
+};
+let obj = {
+    nname:"cp"
+};
+console.log(obj);
+obj.deleteAttribute('nname');
+console.log(obj)
