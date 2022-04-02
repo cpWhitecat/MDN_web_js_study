@@ -70,17 +70,17 @@ console.log(window.name)
 
 
 
-删除属性
-
+删除属性 //一般都会使用this.prototype = null 操作 
+//赋值为空操作比删除一个属性快
 可以用delete来删除非继承属性
 function deleteAttribute(attribute){
-    attr = attribute;
+    attr = attribute; //删去这行 函数传入的attribute不会被读取
     console.log(this);
     delete this.attr;
     return this
 //为什么函数传的参数不能在函数内部被当作一个属性使用
 //如果有这个需求怎么办
-//虽然这个需求感觉不大可能会有 我也只是
+//虽然这个需求感觉不大可能会有
 };
 let obj = {
     nname:"cp"
