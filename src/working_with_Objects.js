@@ -53,6 +53,7 @@ function peoDemo(){
 function newPeo(){
     let p  = new peoDemo  //mdn的new步骤说如果被new的函数没有主动设置返回值 
                           //会自动返回一个this 可是没有返回任何值
+                            //new 创造的是实例
     console.log(this);
     console.log('---------------------');
     console.log(p);
