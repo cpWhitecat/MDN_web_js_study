@@ -49,13 +49,16 @@ function peoDemo(){
     console.log('-------------------');
     // return console.log("peodemo");
 }
-
+关于new关键字https://juejin.cn/post/6844904196362223624
 function newPeo(){
-    let p  = new peoDemo  //mdn的new步骤说如果被new的函数没有主动设置返回值 
-                          //会自动返回一个this 可是没有返回任何值
+    let p  = new peoDemo  //mdn的new步骤说如果被new的函数没有主动设置返回值 ╳
+                          //会自动返回一个this 可是没有返回任何值  ╳
+
+                          // 上面的是文档没读懂吧
                             //new 创造的是实例
     console.log(this);
     console.log('---------------------');
+    console.log('下面是p返回的值');
     console.log(p);
 }
 newPeo()
