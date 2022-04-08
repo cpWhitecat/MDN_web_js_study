@@ -47,7 +47,7 @@ function peoDemo(){
     console.log('-------------------');
     console.log();
     console.log('-------------------');
-    // return console.log("peodemo");
+    // return console.log("peodemo");   //这里没有返回值 所以被 p 存储了
 }
 关于new关键字https://juejin.cn/post/6844904196362223624
 function newPeo(){
@@ -65,7 +65,8 @@ newPeo()
 console.log(window.name)
 
 
-关于new关键字还是有不懂的地方
+// 关于new关键字还是有不懂的地方 （已解决）
+如有不懂可看关于new关键字https://juejin.cn/post/6844904196362223624
 
 解释第:41
 // 每次new一下 相当于执行了一遍new的函数
