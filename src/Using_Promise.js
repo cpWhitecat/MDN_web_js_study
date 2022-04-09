@@ -1,3 +1,4 @@
+const { rejects } = require("assert")
 const { resolve } = require("path")
 
 Promise是一个异步(Async) --- 且只会执行一次
@@ -21,9 +22,9 @@ Promise的时序问题
 //https://segmentfault.com/q/1010000020368538
 
 
-var myPromise1 = new Promise((resolve)=>{
+var myPromise1 = new Promise((rejects)=>{
     console.log('myPromise1');
-    resolve();  //resolve一定要传参，不然后面的then就不会执行
+    rejects();  //resolve和rejects至少传一个，不然后面的then就不会执行
 }).then(()=>{
     console.log("then外部1");
     new Promise(resolve=>{
@@ -39,4 +40,8 @@ var myPromise1 = new Promise((resolve)=>{
 })
 myPromise1()
 throw//是用来抛出用户定义的错误\
+
+
+//现只是初略了解
+// 但对它的应用场景还是不了解
 
