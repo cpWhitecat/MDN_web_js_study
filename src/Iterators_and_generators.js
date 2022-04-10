@@ -1,5 +1,5 @@
 
-Proxy-Object       // 应用于Vue3   //也可能不是 只是有相同的关键字
+Proxy-Object       // 应用于Vue3 
 Proxy的语法
 
 let newProxy  = new Proxy(target,handler)
