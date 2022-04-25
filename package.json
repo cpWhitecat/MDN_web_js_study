@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/cpWhitecat/MDN_web_js_study/issues"
   },
-  "homepage": "https://github.com/cpWhitecat/MDN_web_js_study#readme"
+  "homepage": "https://github.com/cpWhitecat/MDN_web_js_study#readme",
+  "dependencies": {
+    "jest": "^28.0.0"
+  }
 }
