@@ -71,7 +71,10 @@ console.log(window.name)
 解释第:41
 // 每次new一下 相当于执行了一遍new的函数
 
-
+// new关键字又可以new新的东西了，
+// CSSStyleSheet 它会创建一个新的css样式
+let newCSS = new CSSStyleSheet
+还有诸多API
 
 
 
