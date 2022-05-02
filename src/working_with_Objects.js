@@ -7,6 +7,8 @@
 鸭子的嘴巴
 那它就是鸭子 */
 
+const { buffer } = require("stream/consumers")
+
 
 
 // 对象
@@ -75,6 +77,12 @@ console.log(window.name)
 // CSSStyleSheet 它会创建一个新的css样式
 let newCSS = new CSSStyleSheet
 还有诸多API
+
+// 下面涉及CSS-Module
+CSS使用import导入 可以加入断言 不然会被当做js的MIME
+之前的<link type='text/MIME'  src>
+如果type不加上的话，会报MIME_ERROR
+而且type需要改成text/html 
 
 
 
