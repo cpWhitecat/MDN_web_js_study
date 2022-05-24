@@ -171,4 +171,13 @@ call(this,...args)
 
 
 // function中的get和set 以及getter and setter有待验证
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get
+// https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get
+
+
+
+
+
+// 在实际开发中的Async 和 await 的使用 
+// async 会把一个函数的返回值变成promise的形式
+// 也是种隐式转换
+

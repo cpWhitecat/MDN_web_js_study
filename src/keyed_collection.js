@@ -6,6 +6,15 @@ set
 weakMap */
 
 
+// 补set的坑
+
+// 它可以跟Proxy一起使用
+// 他们是响应式对象的基础
+
+let newSet = new Set()
+
+
+
 
 
 
