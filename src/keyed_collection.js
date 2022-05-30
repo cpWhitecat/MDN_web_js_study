@@ -13,6 +13,8 @@ weakMap */
 
 let newSet = new Set()
 
+浅知weakMap 和map的区别
+
 
 
 
