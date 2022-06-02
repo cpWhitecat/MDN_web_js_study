@@ -11,10 +11,23 @@ weakMap */
 // 它可以跟Proxy一起使用
 // 他们是响应式对象的基础
 
-let newSet = new Set()
+let effect_box;
+function effect(fn){
+    effect_box = fn;
+    fn()
+}
 
 浅知weakMap 和map的区别
 
+
+
+let proxy_object={}; 
+let newSet = new WeakMap();
+const reative = new Proxy(proxy_object,{
+    get(){
+        
+    }
+})
 
 
 
