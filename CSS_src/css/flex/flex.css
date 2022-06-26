@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+
+}
+
+.main .item{
+    width: 100px;
+    height: 100px;
+}
+
+.main .item:nth-child(1){
+    background-color: red;
+}
+.main .item:nth-child(2){
+    background-color: green;
+}
+.main .item:nth-child(3){
+    background-color: blue;
+}
