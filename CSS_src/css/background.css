@@ -1,4 +1,4 @@
 .back{
-                  background-size: contain;    // 这就是设置背景图片大小的属性
-              /* 这样估计就能解决之前给div设置背景图片 */
-              }
+    background-size: contain;    // 这就是设置背景图片大小的属性
+/* 这样估计就能解决之前给div设置背景图片 */
+}
